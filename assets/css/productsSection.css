@@ -1,0 +1,221 @@
+
+.products-section {
+    margin: 2rem 0;
+}
+
+.products {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+@media screen and (min-width: 1062px) {
+    .products {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product .image {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* -- */
+.info {
+    width: 100%;
+    border: thin solid var(--card-bd-clr);
+    padding: .5rem;
+}
+.info .name-price {
+    color: var(--green-clr);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.info .name-price .name {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.info .name-price .price {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+/* -- */
+.toppings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.topping {
+    color: var(--white-clr);
+    background-color: var(--orange-clr-alt);
+    padding: .2rem .4rem;
+}
+.topping h4 {
+    font-weight: 400;
+    font-size: .8rem;
+}
+/* -- */
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+}
+.quantity .bx {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: var(--green-clr-alt);
+}
+.qty-cont {
+    border: thin solid var(--green-clr-alt);
+    border-radius: 58.3333px;
+    width: 4rem;
+    text-align: center;
+    margin: 0 .5rem;
+}
+.qty-cont span {
+    color: var(--green-clr-alt);
+    font-size: 1.2rem;
+}
+
+.add-to-cart-btn {
+    background-color: var(--green-clr-alt);
+    height: 2.2rem;
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 1rem;
+    position: relative;
+    transition: 200ms background;
+    z-index: 1;
+}
+.add-to-cart-btn::before {
+    content: "";
+    background-color: var(--green-clr);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 200ms transform;
+}
+.add-to-cart-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* -- banner -- */
+.home-banner {
+    display: none;
+    position: relative;
+    margin: 2rem 0;
+}
+.home-banner-img {
+    width: 100%;
+}
+.sec-call-to-action_container {
+    position: absolute;
+    margin-left: 9rem;
+    margin-top: 4rem;
+}
+.sec-call-to-action-text {
+    color: var(--white-clr);
+    font-weight: 700;
+    font-size: 2rem;
+    max-width: 40rem;
+    line-height: 3rem;
+    letter-spacing: .5px;
+    margin-bottom: 3rem;
+}
+.sec-call-to-action-btn {
+    background-color: var(--green-clr);
+    padding: 0 1rem;
+    height: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.sec-call-to-action-btn::before {
+    content: "";
+    background-color: var(--green-clr-alt);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 200ms transform;
+}
+.sec-call-to-action-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+@media screen and (max-width: 1080px) {
+    .sec-call-to-action_container {
+        margin-left: 8rem;
+        margin-top: 2rem;
+    }
+    .sec-call-to-action-text {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 890px) {
+    .sec-call-to-action_container {
+        margin-left: 4rem;
+        margin-top: .5rem;
+    }
+    .sec-call-to-action-text {
+        margin-bottom: 1rem;
+    }
+}
+/* -- responsiveness breakpoints -- */
+
+/* tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1rem));
+    }
+    .product .image {
+        width: 1rem;
+    }
+    .info {
+        width: 1rem;
+    }
+}
+/* notebooks */
+@media screen and (min-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 20rem));
+    }
+    .product .image {
+        width: 20rem;
+    }
+    .info {
+        width: 20rem;
+    }
+    .toppings {
+        width: 15rem;
+    }
+    .actions {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .add-to-cart-btn {
+        width: 6rem;
+        margin-top: 0;
+    }
+
+    /* ------ */
+    .home-banner {
+        display: block;
+    }
+}
