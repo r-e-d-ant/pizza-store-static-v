@@ -8,10 +8,16 @@
     gap: .2rem;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
+.products-page {
+    row-gap: 1.5rem;
+}
 @media screen and (min-width: 1062px) {
     .products {
         gap: 0;
         justify-content: space-between;
+    }
+    .products-page {
+        row-gap: 1.5rem;
     }
 }
 .product {
@@ -180,15 +186,15 @@
 /* -- responsiveness breakpoints -- */
 
 /* tablet */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .products {
-        grid-template-columns: repeat(auto-fit, minmax(auto, 1rem));
+        grid-template-columns: repeat(auto-fit, minmax(auto, 18rem));
     }
     .product .image {
-        width: 1rem;
+        width: 18rem;
     }
     .info {
-        width: 1rem;
+        width: 18rem;
     }
 }
 /* notebooks */

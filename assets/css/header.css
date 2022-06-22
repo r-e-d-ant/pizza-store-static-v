@@ -3,6 +3,14 @@
     justify-content: space-between;
     align-items: center;
 }
+.header-no-home {
+    background-image: url(../images/footer-img.webp);
+    background-color: var(--choco-clr);
+    background-position: top;
+    height: 12vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .logo img {
     width: 90%;
 }
@@ -17,6 +25,7 @@
     margin-right: 0;
 }
 .nav-link {
+    color: var(--white-clr);
     position: relative;
     text-decoration: none;
     font-size: 1.3rem;
@@ -25,7 +34,7 @@
 }
 .nav-link::before {
     content: "";
-    height: .12rem;
+    height: .15rem;
     width: 100%;
     background-color: var(--white-clr);
     position: absolute;

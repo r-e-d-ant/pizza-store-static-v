@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/productsSection.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <title>πzza</title>
 </head>
 <body>
     <!-- main -->
     <main>
         <!-- section 1 : header -->
-        <section class="section header">
+        <section class="section header container header-no-home">
             <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
             <nav class="nav-bar">
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Cart</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
                 </ul>
             </nav>
         </section>
 
         <!-- section 2 : products -->
-        <section class="section search-section">
+        <section class="section search-section container">
             <h2 class="attire-txt">Happy stomach fresh mind.</h2>
             <form>
                 <div class="form-control">
                     <input type="search">
-                    <button type="submit">Search</button>
+                    <button type="submit" class="btn">Search</button>
                 </div>
             </form>
         </section>
 
         <!-- section 3 -->
-        <section class="section products-section">
-            <div class="products">
+        <section class="section products-section container">
+            <div class="products products-page">
                 <!-- product -->
                 <div class="product">
                     <img src="assets/images/product1.webp" alt="" class="image">
@@ -54,7 +58,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -78,7 +82,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -102,7 +106,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -114,8 +118,8 @@
                     <img src="assets/images/product3.webp" alt="" class="image">
                     <div class="info">
                         <div class="name-price">
-                            <h3 class="name">Pizza Marinara</h3>
-                            <h3 class="price">$12</h3>
+                            <h3 class="name">Sicilian Pizza</h3>
+                            <h3 class="price">$11</h3>
                         </div>
                         <div class="toppings">
                             <div class="topping"><h4>Tomatoes</h4></div>
@@ -126,7 +130,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -138,7 +142,7 @@
                     <img src="assets/images/product5.webp" alt="" class="image">
                     <div class="info">
                         <div class="name-price">
-                            <h3 class="name">Pizza Margherita</h3>
+                            <h3 class="name">Chicago Pizza</h3>
                             <h3 class="price">$10</h3>
                         </div>
                         <div class="toppings">
@@ -150,7 +154,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -162,8 +166,8 @@
                     <img src="assets/images/product6.webp" alt="" class="image">
                     <div class="info">
                         <div class="name-price">
-                            <h3 class="name">St. Louis Pizza</h3>
-                            <h3 class="price">$9</h3>
+                            <h3 class="name">Spinach Pizza</h3>
+                            <h3 class="price">$6</h3>
                         </div>
                         <div class="toppings">
                             <div class="topping"><h4>Tomatoes</h4></div>
@@ -174,79 +178,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
-                                <i class='bx bxs-plus-circle'></i>
-                            </div>
-                            <button class="btn add-to-cart-btn">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- product -->
-                <div class="product">
-                    <img src="assets/images/product7.webp" alt="" class="image">
-                    <div class="info">
-                        <div class="name-price">
-                            <h3 class="name">Pizza Marinara</h3>
-                            <h3 class="price">$12</h3>
-                        </div>
-                        <div class="toppings">
-                            <div class="topping"><h4>Tomatoes</h4></div>
-                            <div class="topping"><h4>Garlic</h4></div>
-                            <div class="topping"><h4>Oregano</h4></div>
-                            <div class="topping"><h4>Extra virgin olive oil</h4></div>
-                        </div>
-                        <div class="actions">
-                            <div class="quantity">
-                                <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
-                                <i class='bx bxs-plus-circle'></i>
-                            </div>
-                            <button class="btn add-to-cart-btn">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- product -->
-                <div class="product">
-                    <img src="assets/images/product8.webp" alt="" class="image">
-                    <div class="info">
-                        <div class="name-price">
-                            <h3 class="name">Pizza Margherita</h3>
-                            <h3 class="price">$10</h3>
-                        </div>
-                        <div class="toppings">
-                            <div class="topping"><h4>Tomatoes</h4></div>
-                            <div class="topping"><h4>Sliced mozzarella</h4></div>
-                            <div class="topping"><h4>Basil</h4></div>
-                            <div class="topping"><h4>Extra virgin olive oil</h4></div>
-                        </div>
-                        <div class="actions">
-                            <div class="quantity">
-                                <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
-                                <i class='bx bxs-plus-circle'></i>
-                            </div>
-                            <button class="btn add-to-cart-btn">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- product -->
-                <div class="product">
-                    <img src="assets/images/product9.webp" alt="" class="image">
-                    <div class="info">
-                        <div class="name-price">
-                            <h3 class="name">St. Louis Pizza</h3>
-                            <h3 class="price">$9</h3>
-                        </div>
-                        <div class="toppings">
-                            <div class="topping"><h4>Tomatoes</h4></div>
-                            <div class="topping"><h4>Provel cheese</h4></div>
-                            <div class="topping"><h4>Oregano</h4></div>
-                            <div class="topping"><h4>Sweeter tomato sauce</h4></div>
-                        </div>
-                        <div class="actions">
-                            <div class="quantity">
-                                <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -258,13 +190,13 @@
                 <img src="assets/images/products_banner.webp" alt="" class="home-banner-img">
             </div>
             <section class="section products-section">
-                <div class="products">
+                <div class="products products-page">
                     <!-- product -->
                     <div class="product">
                         <img src="assets/images/product7.webp" alt="" class="image">
                         <div class="info">
                             <div class="name-price">
-                                <h3 class="name">Pizza Marinara</h3>
+                                <h3 class="name">Thin Crust Pizza</h3>
                                 <h3 class="price">$12</h3>
                             </div>
                             <div class="toppings">
@@ -276,7 +208,7 @@
                             <div class="actions">
                                 <div class="quantity">
                                     <i class='bx bxs-minus-circle'></i>
-                                    <div class="qty">1</div>
+                                    <div class="qty-cont"><span>1</span></div>
                                     <i class='bx bxs-plus-circle'></i>
                                 </div>
                                 <button class="btn add-to-cart-btn">Add to cart</button>
@@ -288,7 +220,7 @@
                         <img src="assets/images/product8.webp" alt="" class="image">
                         <div class="info">
                             <div class="name-price">
-                                <h3 class="name">Pizza Margherita</h3>
+                                <h3 class="name">White Clam Pie</h3>
                                 <h3 class="price">$10</h3>
                             </div>
                             <div class="toppings">
@@ -300,7 +232,7 @@
                             <div class="actions">
                                 <div class="quantity">
                                     <i class='bx bxs-minus-circle'></i>
-                                    <div class="qty">1</div>
+                                    <div class="qty-cont"><span>1</span></div>
                                     <i class='bx bxs-plus-circle'></i>
                                 </div>
                                 <button class="btn add-to-cart-btn">Add to cart</button>
@@ -312,8 +244,8 @@
                         <img src="assets/images/product9.webp" alt="" class="image">
                         <div class="info">
                             <div class="name-price">
-                                <h3 class="name">St. Louis Pizza</h3>
-                                <h3 class="price">$9</h3>
+                                <h3 class="name">Pepperoni Pizza</h3>
+                                <h3 class="price">$5</h3>
                             </div>
                             <div class="toppings">
                                 <div class="topping"><h4>Tomatoes</h4></div>
@@ -324,7 +256,7 @@
                             <div class="actions">
                                 <div class="quantity">
                                     <i class='bx bxs-minus-circle'></i>
-                                    <div class="qty">1</div>
+                                    <div class="qty-cont"><span>1</span></div>
                                     <i class='bx bxs-plus-circle'></i>
                                 </div>
                                 <button class="btn add-to-cart-btn">Add to cart</button>
@@ -337,7 +269,7 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div class="upper-footer">
+        <div class="upper-footer white-clr container">
             <div class="address">
                 <h5>Address</h5>
                 <ul class="footer-nav-items">
@@ -346,7 +278,7 @@
                     <li class="footer-nav-item">222535242</li>
                     <li class="footer-nav-item">example@domain.com</li>
                 </ul>
-                <div class="social-medias">
+                <div class="footer-social-medias">
                     <i class='bx bxl-instagram-alt'></i>
                     <i class='bx bxl-facebook'></i>
                 </div>
@@ -354,9 +286,9 @@
     
             <div class="footer-logo"><img src="assets/images/logo.svg" alt=""></div>
         </div>
-        <div class="lower-footer">
-            <p class="copyright">copyright © 2022 πzza</p>
-            <p class="developer">Developed by <a href="https://thierrymugisha.netlify.app/">Thierry M.</a></p>
+        <div class="lower-footer container">
+            <p class="copyright white-clr">copyright © 2022 πzza</p>
+            <p class="developer white-clr">Developed by <a href="https://thierrymugisha.netlify.app/">Thierry M.</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
