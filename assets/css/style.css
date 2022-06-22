@@ -55,7 +55,12 @@ ul, li {
     color: var(--green-clr);
     font-family: 'Amatic SC', cursive;
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+    .attire-txt {
+        font-size: 2rem;
+    }
 }
 /* -- body -- */
 body {

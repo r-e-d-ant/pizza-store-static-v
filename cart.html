@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/productsSection.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <title>πzza</title>
 </head>
 <body>
     <!-- main -->
     <main>
         <!-- section 1 : header -->
-        <section class="section header">
+        <section class="section header header-no-home container">
             <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
             <nav class="nav-bar">
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Cart</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
                 </ul>
             </nav>
         </section>
         <!-- section 1 -->
-        <section class="section products-section">
+        <section class="section products-section check-products container">
             <h2 class="attire-txt">Please your stomach, please your mind.</h2>
-            <div class="products">
+            <div class="products check-products">
                 <!-- product -->
                 <div class="product">
                     <img src="assets/images/product7.webp" alt="" class="image">
@@ -43,7 +47,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                         </div>
@@ -66,7 +70,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                         </div>
@@ -89,7 +93,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                         </div>
@@ -97,14 +101,14 @@
                 </div>
             </div>
             <div class="attire-n-action">
-                <h2 class="attire-txt">Please your stomach, please your mind.</h2>
+                <h2 class="attire-txt">Hot and ready to serve.</h2>
                 <button class="btn check_out-btn">Checkout</button>
             </div>
         </section>
     </main>
     <!-- Footer -->
     <footer>
-        <div class="upper-footer">
+        <div class="upper-footer white-clr container">
             <div class="address">
                 <h5>Address</h5>
                 <ul class="footer-nav-items">
@@ -113,7 +117,7 @@
                     <li class="footer-nav-item">222535242</li>
                     <li class="footer-nav-item">example@domain.com</li>
                 </ul>
-                <div class="social-medias">
+                <div class="footer-social-medias">
                     <i class='bx bxl-instagram-alt'></i>
                     <i class='bx bxl-facebook'></i>
                 </div>
@@ -121,9 +125,9 @@
     
             <div class="footer-logo"><img src="assets/images/logo.svg" alt=""></div>
         </div>
-        <div class="lower-footer">
-            <p class="copyright">copyright © 2022 πzza</p>
-            <p class="developer">Developed by <a href="https://thierrymugisha.netlify.app/">Thierry M.</a></p>
+        <div class="lower-footer container">
+            <p class="copyright white-clr">copyright © 2022 πzza</p>
+            <p class="developer white-clr">Developed by <a href="https://thierrymugisha.netlify.app/">Thierry M.</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>

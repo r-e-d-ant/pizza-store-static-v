@@ -4,7 +4,7 @@
     align-items: center;
 }
 .header-no-home {
-    background-image: url(../images/footer-img.webp);
+    background-image: url(../images/header_bg.webp);
     background-color: var(--choco-clr);
     background-position: top;
     height: 12vh;

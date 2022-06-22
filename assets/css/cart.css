@@ -1,0 +1,42 @@
+
+.check-products {
+    margin-top: 2rem;
+}
+
+.attire-n-action {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.check_out-btn {
+    background-color: var(--green-clr);
+    padding: 0 2rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+@media screen and (min-width: 555px) {
+    .attire-n-action {
+        display: flex;
+        flex-direction: row;
+    }
+    .check_out-btn {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+}
+.check_out-btn::before {
+    content: "";
+    background-color: var(--green-clr-alt);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 200ms transform;
+}
+.check_out-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
