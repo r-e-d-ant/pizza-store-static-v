@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/productsSection.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/productDetails.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <title>πzza</title>
 </head>
 <body>
     <!-- main -->
     <main>
         <!-- section 1 : header -->
-        <section class="section header">
+        <section class="section header header-no-home container">
             <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
             <nav class="nav-bar">
                 <ul class="nav-items">
@@ -23,7 +28,7 @@
             </nav>
         </section>
         <!-- section 1 -->
-        <section class="section product-details-section">
+        <section class="section product-details-section container">
             <img src="assets/images/product3.webp" alt="" class="product-det-image">
             <div class="product-details">
                 <h2 class="det-name">Pizza Marinara</h2>
@@ -37,7 +42,7 @@
                 <div class="actions">
                     <div class="quantity">
                         <i class='bx bxs-minus-circle'></i>
-                        <div class="qty">1</div>
+                        <div class="qty-cont"><span>1</span></div>
                         <i class='bx bxs-plus-circle'></i>
                     </div>
                     <button class="btn add-to-cart-btn">Add to cart</button>
@@ -46,7 +51,8 @@
         </section>
 
         <!-- section 3 -->
-        <section class="section products-section">
+        <section class="section products-section container">
+            <h2 class="section-title">Similar products</h2>
             <div class="products">
                 <!-- product -->
                 <div class="product">
@@ -65,7 +71,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -89,7 +95,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -113,7 +119,7 @@
                         <div class="actions">
                             <div class="quantity">
                                 <i class='bx bxs-minus-circle'></i>
-                                <div class="qty">1</div>
+                                <div class="qty-cont"><span>1</span></div>
                                 <i class='bx bxs-plus-circle'></i>
                             </div>
                             <button class="btn add-to-cart-btn">Add to cart</button>
@@ -125,7 +131,7 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div class="upper-footer">
+        <div class="upper-footer white-clr container">
             <div class="address">
                 <h5>Address</h5>
                 <ul class="footer-nav-items">
@@ -134,7 +140,7 @@
                     <li class="footer-nav-item">222535242</li>
                     <li class="footer-nav-item">example@domain.com</li>
                 </ul>
-                <div class="social-medias">
+                <div class="footer-social-medias">
                     <i class='bx bxl-instagram-alt'></i>
                     <i class='bx bxl-facebook'></i>
                 </div>
@@ -142,9 +148,9 @@
     
             <div class="footer-logo"><img src="assets/images/logo.svg" alt=""></div>
         </div>
-        <div class="lower-footer">
-            <p class="copyright">copyright © 2022 πzza</p>
-            <p class="developer">Developed by <a href="https://thierrymugisha.netlify.app/">Thierry M.</a></p>
+        <div class="lower-footer container">
+            <p class="copyright white-clr">copyright © 2022 πzza</p>
+            <p class="developer white-clr">Developed by <a href="https://thierrymugisha.netlify.app/">Thierry M.</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
