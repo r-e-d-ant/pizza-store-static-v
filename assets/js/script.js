@@ -1,9 +1,7 @@
 
 // add lazy loading on all images
-const images = document.querySelectorAll('image');
+const images = document.getElementsByClassName('image');
 
-console.log(images);
-
-// images.forEach(image => {
-//     console.log(image);
-// });
+for(var i = 0; i < images.length; i++) {
+    console.log(images[i].setAttribute('loading', 'lazy'));
+}
