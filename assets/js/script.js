@@ -24,6 +24,7 @@ if(firstThreeImages.length >= 3) {
 // on load: get height of the image and add it to lazy class to form a placeholder bg
 window.onload = () => {
     var height = firstThreeImages[0].naturalHeight;
+    console.log(height);
     for(var i = 0; i < lazyClasses.length; i++) {
         lazyClasses[i].style.height = `${height}px`;
     }
