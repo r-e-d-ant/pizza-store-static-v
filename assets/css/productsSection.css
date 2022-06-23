@@ -29,6 +29,10 @@
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
+.lazy {
+    background-color: #ffab76;
+    width: 100%;
+}
 
 /* -- */
 .info {
@@ -193,6 +197,9 @@
     .product .image {
         width: 18rem;
     }
+    .lazy {
+        width: 18rem;
+    }
     .info {
         width: 18rem;
     }
@@ -203,6 +210,9 @@
         grid-template-columns: repeat(auto-fit, minmax(auto, 20rem));
     }
     .product .image {
+        width: 20rem;
+    }
+    .lazy {
         width: 20rem;
     }
     .info {
